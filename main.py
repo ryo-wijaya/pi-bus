@@ -41,7 +41,7 @@ async def get_bus_timings(
         BusTimingsResponse: The formatted response.
     """
 
-    ARRIVELAH_URL = os.getenv("API_BASE_URL")
+    ARRIVELAH_URL = os.getenv("API_BUS_URL")
 
     try:
         response = requests.get(f"{ARRIVELAH_URL}?id={bus_stop_id}")
