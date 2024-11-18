@@ -1,6 +1,6 @@
 ## PI Stock Trader
 
-Backend microservice to handle bus timings data display for the https://github.com/ryo-wijaya/my-pi-board Raspberry Pi dashboard.
+Backend microservice to handle bus timings data display for the https://github.com/ryo-wijaya/my-pi-board Raspberry Pi dashboard. Consumes the cheeaun/arrivelah API which itself consumes LTA's DataMall Bus Arrival API.
 
 ### Command Bank
 
