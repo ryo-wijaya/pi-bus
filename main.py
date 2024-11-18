@@ -2,6 +2,7 @@ from typing import Union
 import os
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import requests
 
