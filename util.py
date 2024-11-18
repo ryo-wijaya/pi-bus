@@ -19,6 +19,8 @@ def calculate_minutes_from_now(arrival_time: str) -> str:
 
         if minutes_diff <= 0:
             return "Arriving"
+        if minutes_diff == 1:
+            return "1 min"
         return f"{minutes_diff} mins"
     except ValueError:
         return "Unknown"

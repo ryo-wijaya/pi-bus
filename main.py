@@ -42,6 +42,10 @@ async def get_bus_timings(
     """
 
     ARRIVELAH_URL = os.getenv("API_BUS_URL")
+    if not ARRIVELAH_URL:
+        raise HTTPException(
+            status_code=500, detail="API_BUS_URL environment variable is not set."
+        )
 
     try:
         response = requests.get(f"{ARRIVELAH_URL}?id={bus_stop_id}")
